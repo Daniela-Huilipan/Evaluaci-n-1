@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+        <style>
+            :root {
+              --bs-body-color: black;
+              --bs-body-bg: white;
+            }
+
+            body {
+                font-weight: 400;
+                font-family: 'Source Sans Pro', sans-serif;
+
+            }
+
+
+            header h1 {
+              font-family: 'Playfair Display', serif;
+                color: #C7A35E;
+                font-weight: 700;
+                font-size: 3.5rem;
+            }
+            header h2 {
+                font-weight: 600;
+                color: black;
+            }
+            header h3 {
+                font-weight: 400;
+            }
+            a {
+                color: black;
+            }
+
+            a:hover {
+                color: #C7A35E;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 600;
+            }
+
+            header p a {
+                font-weight: 400;
+                text-decoration: none;
+            }
+
+            main p a {
+                text-decoration: underline;
+            }
+
+            p.primero::first-letter {
+                font-family: 'Yrsa', serif;
+                color: #C7A35E;
+                float: left;
+                font-size: 4rem;
+                line-height: 1;
+                margin: 0;
+                padding: 0 0.75rem 0 0;
+            }
+
+
+        </style>
+        <title>Premios Nobel</title>
+    </head>
+    <body>
+        <header class="titular">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-md-6 mx-auto text-center align-self-end">
+                      <img src="https://www.gizmodo.com.au/wp-content/uploads/sites/2/2016/10/07/y172s8bqdzhnskrrsffb.gif" class="w-100" alt="Nobel" style="margin-top-: -10vh;"/>
+                                <h1>Premios Nobel</h1>
+                                <h3 class="fs-5 mb-5">Los siguientes datos muestran los premios obtenidos entre 1901 – 2021 según distinción de género y sus categorias.</h3>
+                                <p class="m-0">Por <a href="#">Daniela Huilipán</a></p>
+                                <p class="small">PUBLICADO EL 12 DE MAYO, 2022</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+
+                        <p class="primero">Como bien se sabe, el Premio Nobel es un galardón internacional que se otorga cada año para reconocer a personas o instituciones que hayan llevado a cabo investigaciones, descubrimientos o contribuciones notables a la humanidad.</p>
+
+                        <p>Dichos reconocimientos son entregados a cada persona o institución laureada a través de una medalla de oro, un diploma y una importante suma de dinero. Cifra que actualmente ha alcanzado hasta los 964.000 euros.</p>
+
+                        <p>Pero no todo se trata de medallas y oro, de hecho, el origen de este memorable y reconocido premio coloca a su fundador Alfred Nobel en custodia, quien además de ser el creador de los premios Nobel, también fue el creador de la dinamita, un objeto bélico que por mucho tiempo se usó para la destrucción.</p>
+                        <p>Todos estos antecedentes cuestionan el verdadero propósito de este memorable premio, ¿solo se trataba de una limpieza de imagen de su fundador? o realmente el deseo era reconocer a las personas que brindasen “el mayor beneficio a la humanidad" jamás sabremos </p>
+                        <p>Lo que si queda en evidencia, es la notable distinción existente entre mujeres y hombres que han recibido el premio a lo largo de todos los años de premiación. Desde el año 1901 hasta la fecha, tan solo 58 mujeres han sido reconocidas frente a un total de 885 hombres, un número totalmente desigual. Como se muestra en el gráfico de abajo.</p>
+
+                        <canvas id="PrimerChart" width="400" height="200" class="m-6"></canvas>
+
+                    </div>
+
+                    <div class="col-md-10 mx-auto my-5">
+
+
+                    </div>
+
+                    <div class="col-md-6 mx-auto">
+                        <p><em>
+                          <p>Sin duda la diferencia que dejan los números es realmente sorprendente. Algunas de las explicaciones de estos resultados dan cuenta de el machismo histórico por el cual ha atravesado la sociedad, junto con el escaso acceso que tuvieron las mujeres en carreras científicas. </p>
+                          <p>¿Pero es el Premio Nobel realmente para todos? Si bien ya ha quedado en evidencia la clara desigualdad existente de la participación entre hombres y mujeres, también existe una diferencia entre las categorías que se siguen considerando como las únicas dignas de reconocer, tales como la Física, Química, la literatura e incluso la economía. Pero no queda muy claro del por qué no incluir otras que también han sido un aporte a la humanidad, como las matemáticas, la filosofía, geografía, arquitectura o la tecnología.</p>
+                        </p>
+                    </div>
+                    <canvas id="SegundoChart" width="400" height="200" class="m-5"></canvas>
+
+
+                    <div class="col-md-6 mx-auto">
+                        <p><em>
+                    <p>El gráfico de arriba muestra el número de hombres y mujeres que han ganado un Premio Nobel según las categorías de premiación.</p>
+                    <p>Desde 1901 hasta el día de hoy, tan solo 58 mujeres han trascendido la larga brecha que existe entre hombres y mujeres en los premios Nobel, convirtiéndose así en íconos mundiales e importantes figuras feministas, cuyos nombres no deben ser olvidados.</p>
+                  </div>
+
+                    <div class="col-md-10 mx-auto my-5">
+
+                        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 g-3 text-center" id="aqui"></div>
+                        <canvas id="TercerChart" width="100" height="100" class="m-5"></canvas>
+                    </div>
+
+
+                    <div class="col-md-6 mx-auto">
+                      <div id="secuencia" class="m-5"></div>
+
+            <p class="small my-5">Este es un trabajo para el electivo de <a href="https://github.com/profesorfaco/front-end">Introducción al Desarrollo Front End con HTML, CSS y JavaScript</a>; "inspirado" en <a href="https://graphics.reuters.com/TONGA-VOLCANO/LIGHTNING/zgpomjdbypd/">Analysing the volcanic lightning from the Tonga eruption</a>, que originalmente fue desarrollado para <a href="https://graphics.reuters.com/">Reuters Graphics</a> por Manas Sharma y Simon Scarr; que el trabajo se resuelve con <a href="https://getbootstrap.com/">Bootstrap</a> y <a href="https://www.chartjs.org/">Charts.js</a>, además de consultas a un <a href="https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto5/TotalesNacionales.csv">CSV</a> y un <a href="https://digimon-api.vercel.app/api/digimon">JSON</a>;</p>
+        </main>
+        <footer class="bg-white">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col text-center"><small>Daniela Huilipán | 12 de mayo, 2022</small></div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            async function unaVisualizacion() {
+                const consulta = await fetch("https://raw.githubusercontent.com/Daniela-Huilipan/clase-05-05-datos/main/datos.json");
+                const data = await consulta.json();
+
+                var mujeres = 0;
+                var hombres = 0;
+
+                var enChile = 0;
+                var enMexico = 0;
+                var enArgentina = 0;
+                var enBrasil = 0;
+                var enColombia = 0;
+                var enVenezuela = 0;
+                var enPeru = 0;
+                var enGuatemala = 0;
+
+                var fisicaH = 0;
+                var fisicaM = 0;
+                var quimicaH = 0;
+                var quimicaM = 0;
+                var pazH = 0;
+                var pazM = 0;
+                var medicinaH = 0;
+                var medicinaM = 0;
+                var literaturaH = 0;
+                var literaturaM = 0;
+                var economiaH = 0;
+                var economiaM = 0;
+
+                data.forEach((d) => {
+                if (d.gender == "female") {
+                    mujeres = mujeres + 1;
+                } else if (d.gender == "male") {
+                    hombres = hombres + 1;
+                }
+
+                if (d.bornCountry == "Chile") {
+                    enChile = enChile + 1;
+                } else if (d.bornCountry == "Argentina") {
+                    enArgentina = enArgentina + 1;
+                } else if (d.bornCountry == "Mexico") {
+                    enMexico = enMexico + 1;
+                  } else if (d.bornCountry == "Brazil") {
+                      enBrasil = enBrasil + 1;
+                    } else if (d.bornCountry == "Colombia") {
+                        enColombia = enColombia + 1;
+                      } else if (d.bornCountry == "Venezuela") {
+                          enVenezuela = enVenezuela + 1;
+                        } else if (d.bornCountry == "Peru") {
+                            enPeru = enPeru + 1;
+                          } else if (d.bornCountry == "Guatemala") {
+                              enGuatemala = enGuatemala + 1;
+
+                }
+
+                d.prizes.forEach((prize) => {
+                  if (prize.category == "physics" && d.gender == "male") {
+                      fisicaH = fisicaH + 1;
+                  } else if (prize.category == "physics" && d.gender == "female") {
+                      fisicaM = fisicaM + 1;
+                  }
+                  if (prize.category == "chemistry" && d.gender == "male") {
+                      quimicaH = quimicaH + 1;
+                  } else if (prize.category == "chemistry" && d.gender == "female") {
+                      quimicaM = quimicaM + 1;
+                  }
+                  if (prize.category == "peace" && d.gender == "male") {
+                      pazH = pazH + 1;
+                  } else if (prize.category == "peace" && d.gender == "female") {
+                      pazM = pazM + 1;
+                  }
+                  if (prize.category == "medicine" && d.gender == "male") {
+                      medicinaH = medicinaH + 1;
+                  } else if (prize.category == "medicine" && d.gender == "female") {
+                      medicinaM = medicinaM + 1;
+                  }
+                  if (prize.category == "literature" && d.gender == "male") {
+                      literaturaH = literaturaH + 1;
+                  } else if (prize.category == "literature" && d.gender == "female") {
+                      literaturaM = literaturaM + 1;
+                  }
+                  if (prize.category == "economics" && d.gender == "male") {
+                      economiaH = economiaH + 1;
+                  } else if (prize.category == "economics" && d.gender == "female") {
+                      economiaM = economiaM + 1;
+                  }
+              });
+                });
+
+                new Chart(document.getElementById("PrimerChart").getContext("2d"), {
+                    type: "doughnut",
+                    data: {
+                        labels: ["Mujeres", "Hombres"],
+                        datasets: [{ data: [mujeres, hombres], label: "Premios ganados según sexo", backgroundColor: ["#D9A796", "#22403A"] }],
+                    },
+                });
+
+                new Chart(document.getElementById("SegundoChart").getContext("2d"), {
+                    type: "bar",
+                    data: {
+                        labels: ["Premio Nobel de Física", "Premio Nobel de Química", "Premio Nobel de la Paz", "Premio Nobel de Medicina", "Premio Nobel de Literatura", "Premio Nobel de Economía"],
+                        datasets: [
+                            { data: [fisicaH, quimicaH, pazH, medicinaH, literaturaH, economiaH], label: "Hombres", backgroundColor: ["#22403A"] },
+                            { data: [fisicaM, quimicaM, pazM, medicinaM, literaturaM, economiaM], label: "Mujeres", backgroundColor: ["#D9A796"] },
+                        ],
+
+                    },
+                });
+            }
+
+
+            unaVisualizacion();
+
+
+                //usa imágenes cuadradas, el CSS de bootstrap las muestras como círculos
+                var peliculas = [
+                    { img: src="img/1.png", txt: "Marie Curie. Premio Nobel de Física en 1903. Premio Nobel de Química en 1911" },
+                    { img: src="img/2.png", txt: "Bertha von Suttner. Premio Nobel de la Paz en 1905" },
+                    { img: src="img/3.png", txt: "Selma Lagerlöf. Primera mujer en conseguir el Premio Nobel de Literatura en 1909" },
+                    { img: src="img/4.png", txt: "Grazia Deledda. Premio Nobel de Literatura en 1926" },
+                    { img: src="img/5.png", txt: "Sigrid Undset. Premio Nobel de Literatura en 1928" },
+                    { img: src="img/6.png", txt: "Jane Addams. Premio Nobel de la Paz en 1931" },
+                    { img: src="img/7.png", txt: "Irène Joliot-Curie. Premio Nobel de Química en 1935" },
+                    { img: src="img/8.png", txt: "Pearl S. Buck. Premio Nobel de la Literatura en 1938" },
+                    { img: src="img/9.png", txt: "Gabriela Mistral. Premio Nobel de Literatura en 1945" },
+                    { img: src="img/10.png", txt: "Emily Greene Balch. Premio Nobel de la Paz en 1946" },
+                    { img: src="img/11.png", txt: "Gerty Theresa Cori. Premio Nobel de Medicina en 1947" },
+                    { img: src="img/12.png", txt: "Maria Goeppert-Mayer. Premio Nobel de Física en 1963" },
+                    { img: src="img/13.png", txt: "Dorothy Crowfoot. Premio Nobel de Química en 1964" },
+                    { img: src="img/14.png", txt: "Nelly Sachs. Premio Nobel de Literatura en 1966" },
+                    { img: src="img/15.png", txt: "Betty Williams. Premio Nobel de la Paz en 1976" },
+                    { img: src="img/16.png", txt: "Mairead Maguire. Premio Nobel de la Paz en 1977" },
+                    { img: src="img/17.png", txt: "Rosalyn Yalow. Premio Nobel de Medicina en 1977" },
+                    { img: src="img/18.png", txt: "Teresa de Calcuta. Premio Nobel de la Paz en 1979" },
+                    { img: src="img/19.png", txt: "Alva Myrdal. Premio Nobel de la Paz en 1982" },
+                    { img: src="img/20.png", txt: "Barbara McClintock. Premio Nobel de Medicina en 1983" },
+                    { img: src="img/21.png", txt: "Rita Levi-Montalcini. Premio Nobel de Medicina en 1986" },
+                    { img: src="img/22.png", txt: "Gertrude Elion. Premio Nobel de Medicina en 1988" },
+                    { img: src="img/23.png", txt: "Nadine Gordimer. Premio Nobel de Literatura en 1991" },
+                    { img: src="img/24.png", txt: "Aung San Suu Kyi. Premio Nobel de la Paz en 1991" },
+                    { img: src="img/25.png", txt: "Rigoberta Menchú. Premio Nobel de la Paz en 1992" },
+                    { img: src="img/26.png", txt: "Chloe Anthony Wofford. Premio Nobel de Literatura en 1993" },
+                    { img: src="img/27.png", txt: "Christiane Nüsslein-Volhard. Premio Nobel de Medicina en 1995" },
+                    { img: src="img/28.png", txt: "Wisława Szymborska. Premio Nobel de Literatura en 1996" },
+                    { img: src="img/29.png", txt: "Jody Williams. Premio Nobel de la Paz en 1997" },
+                    { img: src="img/30.png", txt: "Shirin Ebadi. Premio Nobel de la Paz en 2003" },
+                    { img: src="img/31.png", txt: "Elfriede Jelinek. Premio Nobel Literatura en 2004" },
+                    { img: src="img/32.png", txt: "Wangari Muta Maathai. Premio Nobel de la Paz en 2004" },
+                    { img: src="img/33.png", txt: "Linda B. Buck. Premio Nobel de Medicina en 2004" },
+                    { img: src="img/34.png", txt: "Doris Lessing. Premio Nobel de Literatura en 2007" },
+                    { img: src="img/35.png", txt: "Françoise Barré-Sinoussi. Premio Nobel de Medicina en 2008" },
+                    { img: src="img/36.png", txt: "Elizabeth Helen Blackburn. Premio Nobel Medicina en 2009" },
+                    { img: src="img/37.png", txt: "Carol Greider. Premio Nobel de Medicina en 2009" },
+                    { img: src="img/38.png", txt: "Ada Yonath. Premio Nobel de Química en 2009" },
+                    { img: src="img/39.png", txt: "Herta Müller. Premio Nobel de Literatura en 2009" },
+                    { img: src="img/40.png", txt: "Elinor Ostrom. Premio Nobel de Economía en 2009" },
+                    { img: src="img/41.png", txt: "Ellen Johnson-Sirleaf. Premio Nobel de la Paz en 2011" },
+                    { img: src="img/42.png", txt: "Leymah Roberta Gbowee. Premio Nobel de la Paz en 2011" },
+                    { img: src="img/43.png", txt: "Tawakkul Karman. Premio Nobel de la Paz en 2011" },
+                    { img: src="img/44.png", txt: "Alice Munro. Premio Nobel de Literatura en 2013" },
+                    { img: src="img/45.png", txt: "May-Britt Moser. Premio Nobel de Medicina en 2013" },
+                    { img: src="img/46.png", txt: "Malala Yousafzai. Premio Nobel de la Paz en 2014" },
+                    { img: src="img/47.png", txt: "Tu Youyou. Premio Nobel de Medicina en 2015" },
+                    { img: src="img/48.png", txt: "Svetlana Aleksiévich. Premio Nobel de Literatura en 2015" },
+                    { img: src="img/49.png", txt: "Donna Strickland. Premio Nobel de Física en 2018" },
+                    { img: src="img/50.png", txt: "Frances Hamilton Arnold. Premio Nobel de Química en 2018" },
+                    { img: src="img/51.png", txt: "Nadia Murad Basee Taha. Premio Nobel de la Paz en 2018" },
+                    { img: src="img/52.png", txt: "Olga Tokarczuk. Premio Nobel de Literatura en 2018" },
+                    { img: src="img/53.png", txt: "Esther Duflo. Premio Nobel de Economía en 2019" },
+                    { img: src="img/54.png", txt: "Andrea M. Ghez. Premio Nobel de Física en 2020" },
+                    { img: src="img/55.png", txt: "Louise Glück. Premio Nobel de Literatura en 2020" },
+                    { img: src="img/56.png", txt: "Jennifer A. Doudna. Premio Nobel de Química en 2020" },
+                    { img: src="img/57.png", txt: "Emmanuelle Charpentier. Premio Nobel de Química en 2020" },
+
+                ];
+                //según sea par o impar se arma para un lado o el otro
+                peliculas.forEach(function (p, i) {
+                    if (i % 2 == 0) {
+                        document.getElementById("secuencia").innerHTML +=
+                            '<figure class="row d-flex align-items-center"><img src="' +
+                            p.img +
+                            '" class="img-fluid col-12 col-md-6 rounded-circle" /><figcaption class="col-12 col-md-6"><p class="small py-2 text-center text-md-start">' +
+                            p.txt +
+                            "</p></figcaption></figure>";
+                    } else {
+                        document.getElementById("secuencia").innerHTML +=
+                            '<figure class="row d-flex align-items-center"><img src="' +
+                            p.img +
+                            '" class="img-fluid col-12 col-md-6 rounded-circle order-md-2" /><figcaption class="col-12 col-md-6 order-md-1"><p class="small py-2 text-center text-md-end">' +
+                            p.txt +
+                            "</p></figcaption></figure>";
+                    }
+                });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
